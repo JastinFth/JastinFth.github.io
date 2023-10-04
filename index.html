@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JastinF - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-portfolio.css">
+  <style>
+    /* Custom styles for the sections */
+    .section {
+      background-color: #f8f9fa;
+      /* Warna latar belakang seksi */
+      padding: 100px 0;
+    }
+
+    /* Custom styles for text in sections */
+    .section-text {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    /* Custom styles for the jumbotron */
+    .jumbotron {
+      background-image: linear-gradient(to left bottom, #6d32c8, #882bc3, #9f24bd, #b31cb6, #c413af, #c02fb9, #bb41c3, #b64fcc, #9569e0, #6f7cea, #438bed, #0097e9);
+      /* Ganti dengan URL gambar latar belakang jumbotron */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      /* Warna teks jumbotron */
+      padding: 150px 0;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+
+    /* Custom styles for the profile picture */
+    .profile-picture {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      /* Membuat gambar menjadi bulat */
+    }
+
+    /* Custom style for black navbar */
+    .black-navbar {
+      background-color: #000 !important;
+      /* Warna latar belakang navbar hitam */
+    }
+
+    /* Gaya tambahan untuk tombol carousel */
+    .carousel-control-prev,
+    .carousel-control-next {
+      padding: 15px;
+      /* Tambahkan padding di sini sesuai kebutuhan */
+      margin: 0 10px;
+      /* Tambahkan margin di sini sesuai kebutuhan */
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Ubah warna latar belakang */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      font-size: 30px;
+      /* Ubah ukuran ikon sesuai kebutuhan */
+      color: #007bff;
+      /* Ubah warna ikon sesuai kebutuhan */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand ms-5" href="#">JastinF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto col-md-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="pngwing.com.png" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="col-md-6">
+          <h1 class="display-4">Hi. I'm Jastin</h1>
+          <p class="lead">Student Software Engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-text">About Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-text text-center text-primary mt-5">I am an enthusiastic student and active in
+            organizations</h2>
+        </div>
+        <div class="col-md-6">
+          <p class="section-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non arcu et sapien blandit cursus. Nulla eu
+            ipsum vitae libero vehicula volutpat. Sed eget leo vestibulum, volutpat ex vel, euismod tortor. Nullam
+            aliquam sapien ac purus eleifend, id tempor elit finibus. Donec fringilla sit amet lectus id fringilla.
+          </p>
+          <p class="section-text">
+            Vestibulum viverra, felis in mattis dapibus, est justo eleifend libero, vel dapibus neque velit nec ex.
+            Vivamus et arcu eu turpis tincidunt fringilla. Suspendisse tincidunt nisi vel velit bibendum eleifend.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-text fade-in">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="section-text fade-in">
+            Here are some of my skills:
+          </p>
+          <!-- List of skills with progress bars -->
+          <div class="mb-3">
+            <label for="skill1" class="form-label">PHP</label>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="skill2" class="form-label">Javascript</label>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100">75%</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="skill3" class="form-label">Java</label>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100">80%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+          <div class="container">
+            <h2 class="section-text fade-in">Projects</h2>
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Carousel -->
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row justify-content-center">
+                        <!-- Menggunakan justify-content-center untuk mengatur proyek ke tengah -->
+                        <div class="col-md-4">
+                          <!-- Project 1 content -->
+                          <div class="card">
+                            <img src="p1.jpg" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 1</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tambahkan item carousel tambahan di sini -->
+                      </div>
+                    </div>
+                    <!-- Item Carousel 2 -->
+                    <div class="carousel-item">
+                      <div class="row justify-content-center">
+                        <!-- Menggunakan justify-content-center untuk mengatur proyek ke tengah -->
+                        <div class="col-md-4">
+                          <!-- Project 2 content -->
+                          <div class="card">
+                            <img src="p2.jpg" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 2</h5>
+                              <p class="card-text">Consectetur adipiscing elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tambahkan item carousel tambahan di sini -->
+                      </div>
+                    </div>
+                    <!-- Item Carousel 3 -->
+                    <div class="carousel-item">
+                      <div class="row justify-content-center">
+                        <!-- Menggunakan justify-content-center untuk mengatur proyek ke tengah -->
+                        <div class="col-md-4">
+                          <!-- Project 3 content -->
+                          <div class="card">
+                            <img src="p3.jpg" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 3</h5>
+                              <p class="card-text">Sed non arcu et sapien blandit cursus.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tambahkan item carousel tambahan di sini -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Tombol gerakan ke kanan dan kiri -->
+                  <a class="carousel-control-prev" href="#projectCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#projectCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+          <div class="container">
+            <h2 class="section-text fade-in">Contact</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Contact form -->
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <p class="section-text fade-in">
+                  You can contact me through the following channels:
+                </p>
+                <!-- List of social media links -->
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=z3d65aRi6_rtgoF9" class="btn btn-primary">LinkedIn</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=z3d65aRi6_rtgoF9" class="btn btn-primary">Twitter</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=z3d65aRi6_rtgoF9" class="btn btn-primary">GitHub</a>
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container text-center">
+            <p>&copy; 2023 JastinF. All Rights Reserved.</p>
+          </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+          crossorigin="anonymous"></script>
+        <script>
+          // Mengubah warna navbar menjadi hitam saat scroll di luar jumbotron
+          window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            var jumbotron = document.querySelector('.jumbotron');
+            var scrolled = window.scrollY;
+
+            if (scrolled > jumbotron.offsetHeight) {
+              navbar.classList.add('black-navbar');
+            } else {
+              navbar.classList.remove('black-navbar');
+            }
+          });
+        </script>
+</body>
+
+</html>
